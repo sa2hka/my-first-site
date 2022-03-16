@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glad' dupku</title>
+</head>
+
+<body>
+    <h1>Show your kitovie documents</h1>
+
+    <form id="myform" action="">
+   
+        <input type="text" placeholder="show ur noseik" id="form-name">
+        <input type="text" placeholder="show ur hvostik" id='form-surname'>
+
+        <input type="submit" id="subbutton">
+        <button id="fuckme">press me</button>
+
+        <p id="demo"></p>
+
+    </form>
+    <script>        
+        function a() {               // эта функция нигде не используется, пока что
+            alert("you are kot")
+        }
+
+        const element = document.getElementById("fuckme");
+        element.addEventListener("click",
+            function(e) {
+                e.preventDefault();
+                document.getElementById("demo").innerHTML = "i love u.";
+            }
+        );
+
+        
+        
+        const datal = document.getElementById("subbutton");
+        datal.addEventListener("click", 
+            function(e){
+                e.preventDefault(); 
+                let dataFromFiled = document.getElementById('form-name').value;
+                let dataFromFailed = document.getElementById('form-surname').value;
+                console.log(dataFromFiled)
+                console.log(dataFromFailed)
+                if (dataFromFiled=='носик' && dataFromFailed=='хвостик') { alert('ты кот');
+                document.body.style.backgroundColor = "rgb(255, 230, 242)"}
+                else {alert('ты кто?');
+                document.body.style.backgroundColor = "rgb(255, 51, 51)";
+                window.location.href = 'https://natribu.org'}
+        });
+                
+  
+            
+        
+
+    </script>
+</body>
+</html>

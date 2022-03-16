@@ -1,0 +1,14 @@
+h1{
+    color: indigo;
+}
+
+input[type='submit']{
+    color: hotpink;
+}
+input[type='text']{
+    color: darkslateblue;
+}
+button{
+   color:antiquewhite;
+    background-color: rgb(204, 58, 151);
+}
